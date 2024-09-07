@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+  table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+  }
+  .sales-table {
+        border-collapse: collapse;
+        width: 50%;
+        text-align: left;
+    }
+  .sales-table th{
+    background-color: lightblue;
+  }
+
+  </style>
+<body>
+    <div>
+        <input type="number" style="padding: 20px;" id="text1" placeholder="Temperature"> <sup>o</sup>C
+        <button style="color: white; background-color: palegreen; border: none; padding: 20px;"
+         onclick="cal()" type="submit" id="btn">
+            Calculate
+        </button>
+    </div>
+    <div style="width: 40px; height: 40px; border: solid; margin-top: 10px; display: inline-block;" id="txt2">
+    </div><sup style="display: inline-block;">o</sup>F
+    <br><br><br><br><br>
+    <div style="padding:10px;background-color: darkgray; color: white; border: solid; " >
+        World Cups from 2022 to 2050:
+        <div style="padding-bottom: 40px;background-color: lightgrey;" id="list">
+          <ul>
+            <li>
+                Place each year inside an li here
+            </li>
+          </ul>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <div>
+        <input type="number" style="padding: 20px;" id="num" placeholder="Type grade 1"> Grade 1
+        <br><br>
+        <input type="number" style="padding: 20px;" id="number" placeholder="Type Grade 2"> Grade 2
+        <br><br>
+        <input type="number" style="padding: 20px;" id="abs" placeholder="Type Absentees"> Absences
+        <br><br>
+        <button style="padding: 20px; background-color: greenyellow; color: white;" onclick="cal()" > Calculate </button>
+        <br><br>
+        <p id="stdres">
+            The result will be shown here
+        </p>
+    </div>
+
+    <!-- <table style="width:40%; border: solid;">
+        <tr style="background-color: lightgrey;">
+          <th id="std">Student</th>
+          <th id="date">Date</th>
+          <th id="Amount">Amount</th>
+        </tr>
+        <tr>
+          <td>Student name goes here	</td>
+          <td>Date goes here	</td>
+          <td>Amount goes here
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">Total sold	</td>
+          <td>Total goes here
+          </td>
+        </tr>
+      </table> -->
+
+      
+      <style>
+    
+    
+</style>
+
+<div id="div"></div>
+
+    <script src="./exercise3.js">
+    </script>
+</body>
+</html>
