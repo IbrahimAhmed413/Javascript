@@ -4,6 +4,49 @@
     <title>Document</title>
 </head>
 <body>
+    <style>
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 20vh;
+    background-color: black;
+}
+
+h1 {
+    color: rgb(10, 238, 10);
+    text-align: center;
+}
+
+.digit {
+    margin-left: 40px;
+    font-size: 50px;
+    color: #fff;
+}
+
+
+#buttons {
+    margin-top: 50px;
+}
+
+.btn {
+    width: auto;
+    padding: 10px 15px;
+    margin: 0px 20px;
+    background-color: rgb(75, 129, 75);
+    border: none;
+    font-size: 20px;
+    transition: 0.5s;
+    color: white;
+    font-weight: 500;
+}
+
+    </style>
+    
     <select id="deliverySelect" onchange="showSelectedValue()">
         <option value="" disabled selected>Select delivery type</option>
         <option value="standard">Standard (7 days)</option>
@@ -13,10 +56,41 @@
     <div id="orderDate"></div>
     <div id="deliveryDate"></div>
     <div id="deliveryFee"></div>
-    </body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div id="selectimg">    
+        <input type="radio" name="phone" id="iphone_se_red" onclick="change('iphone_se_red')">iPhone SE 64GB Red<br>
+        <input type="radio" name="phone" id="iphone_11_black" onclick="change('iphone_11_black')">iPhone 11 128GB Black<br>
+        <input type="radio" name="phone" id="iphone_8_plus_silver" onclick="change('iphone_8_plus_silver')">iPhone 8 Plus 64GB Silver<br>
+    </div>
+    <div id="product">
+
+        <img id="productImage"alt="Product Image" width="500px"><br>
+        <div id="productName"><b>Product Name: iPhone SE 64GB Red</b></div>
+        <div id="productPrice"><b>Price: US$ 450.00</b></div>
+    </div>
+    <br><br><br><br>
+
+    <div class="container">
+        <div id="time">
+            <span class="digit" id="hr">00</span>:
+            <span class="digit" id="min">00</span>:
+            <span class="digit" id="sec">00</span>:
+            <span class="digit" id="count">00</span>
+        </div>
+    </div>
+    
+    <div id="buttons">
+        <button class="btn" id="start" onclick="startStop()">Start</button>
+        <button class="btn" id="reset" onclick="resetTimer()">Reset</button>
+    </div>
 
     <script src="./exercise4.js">
-
     </script>
 </body>
 </html>
